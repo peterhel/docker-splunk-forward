@@ -1,5 +1,5 @@
-#sudo docker ps | awk 'NR > 1 {print $1}' | xargs sudo docker stop
-#sudo docker ps -a | awk 'NR > 1 {print $1}' | xargs sudo docker rm -f
+sudo docker ps | awk 'NR > 1 {print $1}' | xargs sudo docker stop
+sudo docker ps -a | awk 'NR > 1 {print $1}' | xargs sudo docker rm -f
 
 sudo docker stop splunk
 sudo docker stop logger
