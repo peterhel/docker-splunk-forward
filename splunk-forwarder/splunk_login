@@ -2,6 +2,6 @@
 
 spawn /opt/splunkforwarder/bin/splunk add forward-server 172.17.100.101:9997
 expect "username:" { send "admin\r" }
-expext "assword:" { send "changeme\r" }
+expect "assword:" { send "changeme\r" }
 
 interact
